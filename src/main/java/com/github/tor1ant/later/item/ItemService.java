@@ -2,11 +2,10 @@ package com.github.tor1ant.later.item;
 
 import java.util.List;
 
-public interface ItemService {
+interface ItemService {
+    List<ItemDto> getItems(long userId);
 
-    List<Item> getItem(long userId);
-
-    Item addItem(Long userId,Item item);
+    ItemDto addNewItem(long userId, ItemDto itemDto);
 
     void deleteItem(long userId, long itemId);
 }

@@ -1,8 +1,6 @@
 package com.github.tor1ant.later.user;
 
-import java.util.List;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-interface UserRepository {
-    List<User> findAll();
-    User save(User user);
+interface UserRepository extends JpaRepository<User, Long> {
 }
