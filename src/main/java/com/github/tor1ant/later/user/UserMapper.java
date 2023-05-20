@@ -1,11 +1,12 @@
 package com.github.tor1ant.later.user;
 
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
+
 import java.time.ZoneOffset;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
-import lombok.AccessLevel;
-import lombok.NoArgsConstructor;
 
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 class UserMapper {
